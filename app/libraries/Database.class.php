@@ -25,7 +25,7 @@ public function __construct()
 
 //
 
-public function query($sql){
+public function preparedstmt($sql){
 
   $this->stmt=$this->mycon->prepare($sql);
 
@@ -33,7 +33,7 @@ public function query($sql){
 
 // this fonction related value with paramater in prebaered statment
 
-public function bind($param,$value,$type=null){
+public function bind_Value($param,$value,$type=null){
 
 if(is_null($type)){
     switch(true){
@@ -52,7 +52,7 @@ $this->stmt->bindValue($param,$value,$type);
 
 }
 // execute query 
-public function execute(){
+public function executeQuery(){
    $this->stmt->execute();
 
 }
@@ -61,14 +61,14 @@ public function execute(){
 
 public function fetchAll(){
     $this->stmt->execute();
-  $result= $this->stmt->fetchAll();
+  $result= $this->stmt->fetchAll(PDO::FETCH_OBJ);
   return $result;
 
 }
 // fetch data that have one row 
 public function fetch(){
     $this->stmt->execute();
-  $result= $this->stmt->fetch();
+  $result= $this->stmt->fetch(PDO::FETCH_OBJ);;
   return $result;
 
 }

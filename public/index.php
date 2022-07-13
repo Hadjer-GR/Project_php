@@ -1,5 +1,4 @@
 <?php
-
-include_once "../app/loader.php";
+require_once '../app/loader.php';
 
 $route=new Core();

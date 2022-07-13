@@ -1,12 +1,9 @@
 <?php
-// rounting  inside controlles
 
-//  url=conroller/method/param[]
-// exp: Post/edite/1
+/*
+ route class 
 
-
-
-// core Class
+*/
 
 class Core{
 
@@ -28,7 +25,8 @@ class Core{
 
            $this->controller=$url[0];
             unset($url[0]);  
-         
+         }
+      }   
        // require le controlleur
         require_once "../app/Controlles/".$this->controller.".class.php";
        // instance de class Controller
@@ -42,19 +40,15 @@ class Core{
             
        }
        }
-
-      }
-       
-      $this->param=$url?array_values($url):[];
-     
-  print_r($this->controller);
-     call_user_func_array([$this->controller,$this->method],$this->param);
+ 
+      $this->param=$url?array_values($url):[];   
+      call_user_func_array([$this->controller,$this->method],$this->param);
   
+ 
    }
 
-
     
- }
+
 
 
 

@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: #EAECF4;
+}
+/*
+*
+ design --heaader--
+ * 
+*/
+header{
+    position: relative;
+    min-height: 8vh;
+    padding-top: 5px;
+    max-height: 13vh;
+    width: 100vw;  
+    background-color: #3D5E95;
+    border-bottom: 1px solid #2D4C78;
+
+}
+form{
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.header .chiled{
+    flex-basis: 35%;
+}
+.header .chiled3{
+    flex-basis: 10%;
+}
+.header .user-input{
+    position: relative;
+    padding: 5px 8px;
+    display: flex;
+    flex-direction: row;
+    
+}
+.header .user-input label{
+    position: relative;
+   margin-left: 10px;
+   font-family:Arial, Helvetica, sans-serif Courier, monospace;
+   color:#FCF5F7 ;
+   margin-right: 10px;
+   flex-basis: 40%;
+   font-size: 1.3em;
+
+}
+.header .user-input2 label{
+    flex-basis: 20%;
+}
+.header .user-input .input{
+    padding: 5px 5px;
+    flex-basis: 50%;
+}
+.header .user-input ::placeholder { 
+    color:#ACACB8;
+
+  }
+.header .infor a{
+    position: relative;
+    color:#9FB8D7;
+    cursor: pointer;
+    font-size: 1em;
+    transition: 0.2s;
+    margin-bottom: 5px;
+}
+.header .infor a:hover{
+   font-size: 1.1em;
+}
+
+.header .user-input .btn{
+    position: relative;
+    background-color:#456DB0;
+    color: #F2F5F1;
+    border: 1px solid #2D4C78 ;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+header .user-input .btn:hover{
+    transform: scale(1.1);
+}
+
+/*
+*
+* design main Contente
+*
+*/
+
+.home{
+    position: relative;
+    width: 100%;
+    height: 95%;
+   
+   
+}
+
+.content{
+position: relative;
+margin-top: 2%;
+width: 90%;
+height: auto;
+margin-left: auto;
+margin-right: auto;
+}
+.home .content h2{
+    font-size: 2.4em;
+    font-weight: 600;
+    padding: 6px 5px;
+}
+.home .content h4{
+    font-size: 2em;
+   padding: 10px 6px;
+}
+.register{
+    position: relative;
+    width: 100vw;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block !important;
+}
+ .information{
+       position: relative;
+       width: 60%;
+}
+.information input{
+    all: unset;
+}
+.information  ::placeholder{
+    color: #A7A8AB;
+    background-color: #Ffff;
+    font-size: 1.2em;
+    padding-left: 5px;
+    font-weight: 600;
+
+}
+ .information input{
+    position: relative;
+    padding:10px 5px;
+    background-color: #Ffff;
+
+    border-radius: 5px;
+    margin-bottom: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    width: 100%;
+}
+.date_naissance{
+    height: auto;
+    margin-bottom: 10px;
+}
+.date_naissance h4{
+    padding: 8px 5px;
+    font-size: 1.4em !important;
+    margin-bottom: 10px;
+}
+.date_naissance input{
+all: unset;
+}
+.date_naissance input{
+    padding: 10px 5px;
+    margin-left: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    background-color: #Ffff;
+    font-weight: 600;
+    border-radius: 5px;
+}
+fieldset{
+    all: unset;
+}
+fieldset{
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    
+}
+.content-genre label{
+    font-size: 1.4em !important;
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
+.text{
+    display: inline-block;
+    margin: 5px;
+}
+.register .btn input{
+    position: relative;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #6F944C;
+    color: #Ffff;
+    cursor: pointer;
+    border: none !important;
+    font-size: 1.2em;
+    transition: 0.2s;
+}
+.register .btn input:hover{
+    font-size: 1.3em;
+}

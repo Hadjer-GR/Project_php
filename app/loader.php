@@ -1,8 +1,6 @@
 <?php
-include_once"config/config.php";
-
-include_once"libraries/Core.class.php";
-include_once"libraries/Database.class.php";
-include_once"libraries/Controllers.class.php";
-
-
+ session_start();
+require_once "config/config.php";
+require_once 'libraries/Controllers.class.php';
+require_once 'libraries/Core.class.php';
+require_once 'libraries/Database.class.php';

@@ -8,10 +8,10 @@ public function model($model){
 }
 public function view($view,$data=[]){
 
-    if(file_exists("../app/View/".ucwords($view).".php")){
-    require_once "../app/View/".ucwords($view).".php";
+    if(file_exists("../app/View/".$view.".php")){
+    require_once "../app/View/".$view.".php";
     } else{
-        die("view doesn't existe");
+     die("no views");
     }
 
 

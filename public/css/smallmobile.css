@@ -1,0 +1,101 @@
+
+/*
+ design header dans le sall mobile
+
+*/
+
+
+header{
+    min-height: 9vh!important;
+
+}
+form{
+    margin-top: 10px !important;
+    width: 100% !important;
+    justify-content:space-around !important;
+    align-items: center !important;
+    line-height: 1px !important;
+
+
+}
+
+.header .chiled{
+    flex-basis: none !important;
+    max-width: 40vw !important;
+}
+.user-input2{
+    max-width: 40vw !important;
+    height: auto !important;
+
+    
+}
+.infor .input{
+    padding: 2px 5px;
+    max-width: 30vw!important;
+    flex-basis: none !important;
+}
+
+
+.header .chiled3{
+    flex-basis: none !important;
+    max-width: 20vw !important;
+
+}
+
+.header .user-input label{
+   font-size: 0.7em !important;
+   margin-bottom: 5px !important;
+
+}
+.header .user-input ::placeholder  { 
+  
+    font-size: 0.7em !important;
+    margin-bottom: 10px !important;
+
+  }
+.header .user-input .input{
+     flex-basis: none !important;
+}
+.header .infor a{
+  padding: 10px 5px !important;
+    font-size: 0.5em !important;
+    transition: 0.2s;
+}
+.header .infor a:hover{
+   font-size: 0.8em ;
+}
+
+.header .user-input .btn{
+    position: relative;
+    background-color:#456DB0;
+    color: #F2F5F1;
+    border: 1px solid #2D4C78 ;
+    padding: 6px 5px !important;
+    margin-bottom: 4px !important;
+    font-size: 0.6em;
+    cursor: pointer;
+    transition: 0.2s;
+}
+header .user-input .btn:hover{
+    transform: scale(1.1);
+}
+
+/*
+* main content
+*
+*/
+.home .content h4{
+    font-size: 1.2em !important;
+    font-weight: 600 !important;
+   padding: 8px 6px !important;
+}
+.information{
+    position: relative;
+    width: 80%;
+}
+.date_naissance input{
+    height:auto !important;
+    padding: none !important;
+    font-weight: none !important;
+    border-radius: none !important;
+}
